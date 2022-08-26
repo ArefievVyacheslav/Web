@@ -1,15 +1,10 @@
 <template>
   <div
     :style="{ backgroundColor: bgColor, borderColor: borderColor, color: textColor }"
-    class="p-2 rounded-[8px] border-2 flex text-sm items-center h-[36px] w-[185px] mt-1 cursor-pointer text-center"
+    class="p-2 font-bold rounded-[8px] border-2 flex mb-2 text-sm items-center h-auto mx-auto w-[240px] mt-1 cursor-pointer text-center"
     @click="redirect"
   >
-    <p
-      class="w-full mx-3.5"
-      :style="{ color: textColor }"
-    >
-      {{ messageText }}
-    </p>
+    {{ messageText }}
   </div>
 </template>
 
